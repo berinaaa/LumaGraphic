@@ -1,0 +1,1 @@
+alert("Your appointment has been done!");

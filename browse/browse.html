@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luma Graphic</title>
+        <link rel="stylesheet" href="browse.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@900&family=Poppins:wght@100;200;300;500;600&display=swap" rel="stylesheet">
+        <link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="../index.html"><img src="../images/siteheader.png" width="300px" height="50px">
+                    <button class="contact-form-btn" onclick="sendValues()" id="send">Login</button></a>                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../about/about.html">ABOUT</a></li>
+                        <li><a href="../news/news.html">NEWS</a></li>
+                        <li class="dropdown">
+                            <a href="#" 
+                        class="dropbtn">BROWSE</a>
+                        <div class="dropdown-content">
+                            <a href="../browse/images/pens/pens.html">Pens</a>
+                            <a href="../browse/images/lighters/lighters.html">Lighters</a>
+                            <a href="../browse/images/keychains/keychains.html">Keychains</a>
+                            <a href="../browse/images/usb/usb.html">USB</a>
+                            <a href="../browse/images/notebooks/notebooks.html">Notebooks</a>
+                            <a href="../browse/images/others/others.html">Others</a>
+                        </div>
+                    
+                </li>
+                        <li><a href="../contact/contact.html">CONTACT</a></li>
+
+                        <input type="text" id="myInput"  onkeyup="myFunction()" placeholder="Search for products..">                    
+                    
+                    <div id="myULpt2" class="myULpt2">
+                        <!-- Pens -->
+                        <li><a href="browse/images/pens/pens.html">Pens</a></li>
+                        <li><a href="browse/images/pens/pens.html">Twist</a></li>
+                        <li><a href="#browse/images/pens/pens.html">Ilir</a></li>
+                        <li><a href="browse/images/pens/pens.html">Opium</a></li>
+                        <li><a href="browse/images/pens/pens.html">Touch</a></li>
+                        <li><a href="browse/images/pens/pens.html">Luma Touch</a></li>
+                        <li><a href="browse/images/pens/pens.html">Spiral</a></li>
+                        <li><a href="browse/images/pens/pens.html">Vip</a></li>
+                        <li><a href="browse/images/pens/pens.html">Premium</a></li>
+                        <li><a href="browse/images/pens/pens.html">Full Milk</a></li>
+                        <li><a href="browse/images/pens/pens.html">Capr</a></li>
+                        <li><a href="browse/images/pens/pens.html">Gold</a></li>
+                        <li><a href="browse/images/pens/pens.html">Envy</a></li>
+                        <!-- Lighters -->
+                        <li><a href="browse/images/lighters/lighters.html">Lighters
+                        </a></li>
+                        <li><a href="browse/images/lighters/lighters.html">Basic</a></li>
+                        <li><a href="browse/images/lighters/lighters.html">Krik</a></li>
+                        <li><a href="browse/images/lighters/lighters.html">King</a></li>
+                        <li><a href="browse/images/lighters/lighters.html">Turbo</a></li>
+                        <li><a href="browse/images/lighters/lighters.html">Holder</a></li>
+                        <li><a href="browse/images/lighters/lighters.html">Zippo</a></li>
+                        <!-- Keychains -->
+                        <li><a href="browse/images/keychains/keychains.html">Keychains</a></li>
+                        <li><a href="browse/images/keychains/keychains.html">Glob</a></li>
+                        <li><a href="browse/images/keychains/keychains.html">Black Tag</a></li>
+                        <li><a href="browse/images/keychains/keychains.html">Truck</a></li>
+                        <!-- USB -->
+                        <li><a href="browse/images/usb/usb.html">USB</a></li>
+                        <li><a href="browse/images/usb/usb.html">Key</a></li>
+                        <li><a href="browse/images/usb/usb.html">Nova</a></li>
+                        <li><a href="browse/images/usb/usb.html">PVC USB Card</a></li>
+                        <!-- Notebooks -->
+                        <li><a href="browse/images/notebooks/notebooks.html">Notebooks</a></li>
+                        <li><a href="browse/images/notebooks/notebooks.html">Premium Note</a></li>
+                        <li><a href="browse/images/notebooks/notebooks.html">Phone Book</a></li>
+                        <li><a href="browse/images/notebooks/notebooks.html">Zarf</a></li>
+                        <li><a href="browse/images/notebooks/notebooks.html">Termo</a></li>
+                        <li><a href="browse/images/notebooks/notebooks.html">Mini</a></li>
+                        <li><a href="browse/images/notebooks/notebooks.html">Eko M</a></li>
+                        <li><a href="browse/images/notebooks/notebooks.html">Kolor</a></li>
+                        <li><a href="browse/images/notebooks/notebooks.html">Simple</a></li>
+                        <li><a href="browse/images/notebooks/notebooks.html">Full Agenda</a></li>
+                        <!-- Others -->
+                        <li><a href="browse/images/others/others.html">Others</a></li>
+                        <li><a href="browse/images/others/others.html">Classic</a></li>
+                        <li><a href="browse/images/others/others.html">Circle Bomb</a></li>
+                        <li><a href="browse/images/others/others.html">Vizit Kartela</a></li>
+                        <li><a href="browse/images/others/others.html">Kalendar Muri</a></li>
+                        <li><a href="browse/images/others/others.html">Kalendar Tavoline</a></li>
+                        <li><a href="browse/images/others/others.html">Qese Letre</a></li>
+                        <li><a href="browse/images/others/others.html">Qese Kartoni</a></li>
+                        <li><a href="browse/images/others/others.html">Zarfe</a></li>
+                        <li><a href="browse/images/others/others.html">Air Freshener</a></li>
+                    </div>
+                </nav>
+        </section>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/twist.JPG" alt="Sky" style="width: 158px; height: auto;">
+                    <div class="container">
+                        <h2>Twist</h2>
+                        <p class="title">Pen</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>15 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/ilir.JPG" alt="Ilir" style="width: 166px; height: auto;">
+                    <div class="container">
+                        <h2>Ilir</h2>
+                        <p class="title">Pen</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>12 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/opium.JPG" alt="Opium" style="width: 160px; height: auto;">
+                    <div class="container">
+                        <h2>Opium</h2>
+                        <p class="title">Pen</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>15 den</p>
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+            <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/touch.JPG" alt="Touch" style="width: 150px; height: auto;">
+                    <div class="container">
+                        <h2>Touch</h2>
+                        <p class="title">Pen</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>15 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/luma touch.JPG" alt="LumaTouch" style="width: 122px; height: auto;">
+                    <div class="container">
+                        <h2>Luma Touch</h2>
+                        <p class="title">Pen</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>45 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/spiral.JPG" alt="Spiral" style="width: 202px; height: auto;">
+                    <div class="container">
+                        <h2>Spiral</h2>
+                        <p class="title">Pen</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>3D Sticker</p>
+                        <p>80 den</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/vip.JPG" alt="Vip" style="width: 164px; height: auto;">
+                    <div class="container">
+                        <h2>Vip</h2>
+                        <p class="title">Pen</p>
+                        <p>Metal</p>
+                        <p>Engrave</p>
+                        <p>Laser</p>
+                        <p>40 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/premium.JPG" alt="Premium" style="width: 182px; height: auto;">
+                    <div class="container">
+                        <h2>Premium</h2>
+                        <p class="title">Pen</p>
+                        <p>Metal</p>
+                        <p>Engrave</p>
+                        <p>Laser</p>
+                        <p>200 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/full milk.JPG" alt="FullMilk" style="width: 161px; height: auto;">
+                    <div class="container">
+                        <h2>Full Milk</h2>
+                        <p class="title">Pen</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>15 den</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/capri.JPG" alt="Capri" style="width: 143px; height: auto;">
+                    <div class="container">
+                        <h2>Capri</h2>
+                        <p class="title">Pen</p>
+                        <p>Metal</p>
+                        <p>Engrave</p>
+                        <p>Laser</p>
+                        <p>35 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/gold.JPG" alt="Gold" style="width: 261px; height: auto;">
+                    <div class="container">
+                        <h2>Gold</h2>
+                        <p class="title">Pen</p>
+                        <p>Metal</p>
+                        <p>Engrave</p>
+                        <p>Laser</p>
+                        <p>300 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/pens/envy.JPG" alt="Envy" style="width: 169px; height: auto;">
+                    <div class="container">
+                        <h2>Envy</h2>
+                        <p class="title">Pen</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>20 den</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/lighters/basic.JPG" alt="Basic" style="width: 143px; height: auto;">
+                    <div class="container">
+                        <h2>Basic</h2>
+                        <p class="title">Lighter</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>15 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/lighters/krik.JPG" alt="Krik" style="width: 176px; height: auto;">
+                    <div class="container">
+                        <h2>Krik</h2>
+                        <p class="title">Lighter</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>25 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img class="king" src="../browse/images/lighters/King.PNG" alt="King" style="width: 303px; height: auto; padding-top: 57px; padding-bottom: 33px;">
+                    <div class="container">
+                        <h2>King</h2>
+                        <p class="title">Lighter</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>18 den</p>
+                    </div>
+                </div>
+            </div>
+</div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/lighters/Turbo.PNG" alt="Turbo" style="width: 166px; height: auto; padding-top: 40px;
+                    padding-bottom: 33px;">
+                    <div class="container">
+                        <h2>Turbo</h2>
+                        <p class="title">Lighter</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>25 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/lighters/holder.JPG" alt="Holder" style="width: 262px; height: auto; padding-top: 14px;
+                    padding-bottom: 20px;">
+                    <div class="container">
+                        <h2>Holder</h2>
+                        <p class="title">Lighter</p>
+                        <p>Plastic</p>
+                        <p>Color Print</p>
+                        <p>UV Print</p>
+                        <p>27 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/lighters/zippo.JPG" alt="Zippo" style="width: 176px; height: auto; padding-bottom: 22px;">
+                    <div class="container">
+                        <h2>Zippo</h2>
+                        <p class="title">Lighter</p>
+                        <p>Metal</p>
+                        <p>Engrave</p>
+                        <p>Laser</p>
+                        <p>250 den</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/keychains/glob.JPG" alt="Glob" style="width: 220px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+                    <div class="container">
+                        <h2>Glob</h2>
+                        <p class="title">Keychain</p>
+                        <p>Metal</p>
+                        <p>Color Print / Engrave</p>
+                        <p>UV Print / Laser</p>
+                        <p>100 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="../browse/images/keychains/black tag.JPG" alt="BlackTag" style="width: 223px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+                    <div class="container">
+                        <h2>Black Tag</h2>
+                        <p class="title">Keychain</p>
+                        <p>Metal</p>
+                        <p>Engrave</p>
+                        <p>Laser</p>
+                        <p>80 den</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img class="king" src="../browse/images/keychains/truck.JPG" alt="Truck" style="width: 205px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+                    <div class="container">
+                        <h2>Truck</h2>
+                        <p class="title">Keychain</p>
+                        <p>Metal</p>
+                        <p>Color Print / Enrave</p>
+                        <p>3D Sticker / Laser</p>
+                        <p>100 den</p>
+                    </div>
+                </div>
+            </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/usb/key.JPG" alt="Key" style="width: 210px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Key</h2>
+                <p class="title">USB</p>
+                <p>Metal</p>
+                <p>Engrave</p>
+                <p>Laser</p>
+                <p>300 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/usb/nova.JPG" alt="Nova" style="width: 209px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Nova</h2>
+                <p class="title">USB</p>
+                <p>Metal</p>
+                <p>Engrave</p>
+                <p>Laser</p>
+                <p>300 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img class="king" src="../browse/images/usb/pvc usb card.JPG" alt="PVCUSBCard" style="width: 184px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>PVC USB Card</h2>
+                <p class="title">USB</p>
+                <p>Plastic</p>
+                <p>Color Print</p>
+                <p>3UV Print</p>
+                <p>300 den</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/notebooks/premium note.JPG" alt="PremiumNote" style="width: 286px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Premium Note</h2>
+                <p class="title">Notebook</p>
+                <p>Color Print</p>
+                <p>Engrave</p>
+                <p>UV Print / Laser</p>
+                <p>600 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/notebooks/phone notebook.JPG" alt="PhoneNotebook" style="width: 247px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Phone Notebook</h2>
+                <p class="title">Notebook</p>
+                <p>Color Print</p>
+                <p>UV Print</p>
+                <p>250 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img class="king" src="../browse/images/notebooks/zarf.JPG" alt="Zarf" style="width: 177px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Zarf</h2>
+                <p class="title">Notebook</p>
+                <p>Color Print</p>
+                <p>UV Print</p>
+                <p>300 den</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/notebooks/termo.JPG" alt="Termo" style="width: 185px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Termo</h2>
+                <p class="title">Notebook</p>
+                <p>Color Print</p>
+                <p>UV Print</p>
+                <p>150 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/notebooks/mini.JPG" alt="Mini" style="width: 321px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Mini</h2>
+                <p class="title">Notebook</p>
+                <p>Color Print</p>
+                <p>UV Print</p>
+                <p>80 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img class="king" src="../browse/images/notebooks/eko.JPG" alt="Eko" style="width:201px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Eko M</h2>
+                <p class="title">Notebook</p>
+                <p>Color Print</p>
+                <p>UV Print</p>
+                <p>90 den</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/notebooks/kolor.JPG" alt="Kolor" style="width: 225px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Kolor</h2>
+                <p class="title">Notebook</p>
+                <p>Color Print</p>
+                <p>UV Print</p>
+                <p>100 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/notebooks/simple.PNG" alt="Simple" style="width: 191px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Simple</h2>
+                <p class="title">Notebook</p>
+                <p>Color Print</p>
+                <p>UV Print</p>
+                <p>250 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img class="king" src="../browse/images/notebooks/full agenda.PNG" alt="FullAgenda" style="width: 180px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Full Agenda</h2>
+                <p class="title">Notebook</p>
+                <p>Color Print</p>
+                <p>UV Print</p>
+                <p>300 den</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/others/classic.PNG" alt="Classic" style="width: 275px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2> Classic</h2>
+                <p class="title">Clock</p>
+                <p>Color Print</p>
+                <p>UV Print</p>
+                <p>800 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/others/circle bomb.PNG" alt="CircleBomb" style="width: 231px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Circle Bombe</h2>
+                <p class="title">Clock</p>
+                <p>Color Print</p>
+                <p>UV Print</p>
+                <p>800 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img class="king" src="../browse/images/others/vizit kartela.JPG" alt="vizitkartela" style="width: 204px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Vizit Kartela</h2>
+                <p class="title">Visit Card</p>
+                <p>Color Print</p>
+                <p>Digital Print</p>
+                <p>8 den</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/others/wall calendar.JPG" alt="KalendarMuri" style="width: 183px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Kalndar Muri</h2>
+                <p class="title">Calendar</p>
+                <p>Color Print</p>
+                <p>Digital Print</p>
+                <p>40 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/others/table calendar.JPG" alt="KalendarTavoline" style="width: 324px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Kalendar Tavoline</h2>
+                <p class="title">Calendar</p>
+                <p>Color Print</p>
+                <p>Digital Print</p>
+                <p>150 den</p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/others/classic qese.JPG" alt="QeseLetre" style="width: 243px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Qese Letre</h2>
+                <p class="title">Bag</p>
+                <p>Color Print</p>
+                <p>Stilo Shtyp</p>
+                <p> A5 - 45 den</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img class="king" src="../browse/images/others/qese kartoni.JPG" alt="QeseKartoni" style="width:246px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Qese Kartoni</h2>
+                <p class="title">Bag</p>
+                <p>Color Print</p>
+                <p>UV Print</p>
+                <p> A5 - 55 den</p>
+            </div>
+        </div>
+    </div>               
+    <div class="column">
+        <div class="card">
+            <img src="../browse/images/others/zarfe.JPG" alt="Zarfe" style="width: 208px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Zarfe</h2>
+                <p class="title">Envelope</p>
+                <p>Color Print</p>
+                <p>Digital Print</p>
+                <p>15 den</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img class="king" src="../browse/images/others/air freshener.JPG" alt="AirFreshener" style="width:239px; height: auto; padding-top: 20px; padding-bottom: 11px;">
+            <div class="container">
+                <h2>Air Freshener</h2>
+                <p class="title">Air Freshener</p>
+                <p>Color Print</p>
+                <p>13 den</p>
+                <P>28 den</P>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src = "browse.js"></script>
+
+    </body>
+</html>

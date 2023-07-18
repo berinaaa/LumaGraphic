@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#popo {
+    padding-left: 124px;
+}
+
+#iconcheck {
+    font-size: 100px;
+}
+
+#iconcheckdiv {
+    padding-left: 600px;
+    padding-top: 100px;
+}
+
+#mesukses {
+    padding-top: 50px;
+    padding-left: 500px;
+    font-size: 60px;
+}
